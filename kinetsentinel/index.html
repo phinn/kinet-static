@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KinetSentinel — Support</title>
+<style>
+body{font-family:-apple-system,"PingFang SC","Hiragino Sans",sans-serif;margin:0;background:#0c1014;color:#e4e9ee;line-height:1.7}
+main{max-width:720px;margin:0 auto;padding:48px 24px}
+h1{font-weight:700}
+h2{margin-top:2em;font-size:1.15em;color:#7fd4c0}
+code{background:#161d24;padding:2px 6px;border-radius:6px}
+a{color:#5ec8b0}
+</style>
+</head>
+<body>
+<main>
+<h1>KinetSentinel Support</h1>
+<p><strong>KinetSentinel</strong> — a macOS permission auditor for AI Agents. It watches in real time which local AI agents touch sensitive permissions (screen recording, accessibility, automation, files) and alerts you before something crosses the line.</p>
+
+<h2>Contact / Support</h2>
+<p>Email: <code>phinn@kinet.dev</code><br>
+Response within 48 hours · 48 小时内回复</p>
+
+<h2>FAQ</h2>
+
+<h3>Why does Sentinel need Accessibility permission? / 为什么需要辅助功能权限?</h3>
+<p>Sentinel monitors TCC permission changes and agent process activity, which requires the Accessibility and Automation grants. Sentinel only <em>reads</em> permission state — it never grants permissions on your behalf.</p>
+
+<h3>What counts as a "sensitive action"? / 什么算敏感动作?</h3>
+<p>Screen capture, keystroke-level access, automation of other apps (Apple Events), and reads of protected folders by agent processes. You define the watch rules.</p>
+
+<h3>Does Sentinel phone home? / 会联网上报吗?</h3>
+<p>No. All monitoring and alerting is local. No account, no telemetry, no network. See the <a href="privacy.html">Privacy Policy</a>.</p>
+
+<h3>Where is my data stored? / 数据存在哪里?</h3>
+<p>Entirely on your Mac. Deleting the app deletes all data.</p>
+
+<p><a href="privacy.html">Privacy Policy</a></p>
+</main>
+</body>
+</html>
