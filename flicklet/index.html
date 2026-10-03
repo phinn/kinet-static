@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flicklet — Support & Privacy</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+    background: #faf9f7; color: #1d1d1f; line-height: 1.65; padding: 48px 20px 80px;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { background: #16161a; color: #f2f2f4; }
+    .card { background: #22222a !important; }
+    h2 { color: #ffb04a !important; }
+  }
+  .wrap { max-width: 640px; margin: 0 auto; }
+  .logo {
+    width: 84px; height: 84px; border-radius: 20px; margin: 0 auto 18px;
+    background: linear-gradient(170deg, #fea02a, #fa5a6e);
+    display: flex; align-items: center; justify-content: center; font-size: 40px;
+    box-shadow: 0 8px 28px rgba(250, 90, 110, .28);
+  }
+  h1 { font-size: 28px; font-weight: 700; text-align: center; letter-spacing: -0.02em; }
+  .tagline { text-align: center; color: #88868d; margin: 6px 0 34px; font-size: 15px; }
+  .card {
+    background: #fff; border-radius: 16px; padding: 26px 28px; margin-bottom: 16px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.05);
+  }
+  h2 { font-size: 17px; font-weight: 650; color: #e07820; margin-bottom: 10px; }
+  p, li { font-size: 14.5px; color: #55535a; }
+  @media (prefers-color-scheme: dark) { p, li { color: #b9b7c0; } }
+  ul { padding-left: 20px; margin-top: 6px; }
+  .foot { text-align: center; color: #a5a3aa; font-size: 12.5px; margin-top: 30px; }
+  a { color: #e07820; text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="logo">🃏</div>
+  <h1>Flicklet</h1>
+  <p class="tagline">Swipe to a clean photo library</p>
+
+  <div class="card">
+    <h2>What is Flicklet?</h2>
+    <p>Flicklet turns photo cleanup into a fast, satisfying swipe: left to delete, right to keep. It groups similar shots, screenshots and bursts so you can review them in seconds — entirely on your device.</p>
+  </div>
+
+  <div class="card">
+    <h2>Privacy</h2>
+    <ul>
+      <li><strong>No account, no tracking, no ads.</strong> Flicklet contains no third-party analytics or advertising SDKs.</li>
+      <li><strong>Photos never leave your device.</strong> All scanning, clustering and processing happens locally using Apple's Photos and Vision frameworks.</li>
+      <li><strong>No data collected.</strong> We do not collect, transmit, or store any personal data. There is nothing to encrypt in transit because nothing is sent.</li>
+      <li><strong>Deletions require your confirmation</strong> through the system photo-library permission dialog. Flicklet only moves photos to the Recently Deleted album, where you can restore them for 30 days.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Permissions</h2>
+    <p>Flicklet requests access to your photo library solely to display and manage your own photos. You can revoke access anytime in Settings → Privacy → Photos.</p>
+  </div>
+
+  <div class="card">
+    <h2>Support</h2>
+    <p>Questions, feedback or a bug to report? Contact: <a href="mailto:phinn@qq.com">phinn@qq.com</a></p>
+  </div>
+
+  <p class="foot">© 2026 Phinn. All rights reserved.</p>
+</div>
+</body>
+</html>
