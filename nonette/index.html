@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nonette — Nonogram logic puzzles</title>
+<style>
+  :root { --bg:#171A24; --card:#232838; --ink:#EDEFF7; --dim:#8B92A8; --accent:#F0A93C; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--ink); font-family:-apple-system,'SF Pro Rounded',system-ui,sans-serif;
+         display:flex; justify-content:center; min-height:100vh; }
+  .wrap { max-width:640px; padding:48px 28px; text-align:center; }
+  .logo { font-size:52px; font-weight:900; letter-spacing:1px; color:var(--accent); }
+  .tag { font-size:19px; color:var(--dim); margin:10px 0 34px; font-weight:600; }
+  .grid { display:grid; grid-template-columns:repeat(5,44px); gap:3px; margin:0 auto 34px; width:max-content; }
+  .cell { width:44px; height:44px; border-radius:9px; background:var(--card); }
+  .cell.on { background:var(--accent); }
+  h2 { font-size:22px; font-weight:800; margin:26px 0 10px; }
+  p { font-size:15.5px; line-height:1.65; color:var(--dim); margin-bottom:14px; text-align:left; }
+  .feat { text-align:left; margin:6px 0; padding:14px 18px; background:var(--card); border-radius:16px; }
+  .feat b { color:var(--ink); }
+  .badge { display:inline-block; padding:6px 16px; border-radius:999px; background:var(--accent);
+           color:#171A24; font-weight:800; font-size:14px; margin-bottom:26px; }
+  footer { margin-top:40px; font-size:13px; color:var(--dim); }
+  footer a { color:var(--accent); text-decoration:none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="logo">Nonette</div>
+  <div class="tag">Pure nonogram logic — every puzzle has exactly one solution</div>
+  <div class="grid">
+    <div class="cell on"></div><div class="cell on"></div><div class="cell"></div><div class="cell on"></div><div class="cell on"></div>
+    <div class="cell"></div><div class="cell on"></div><div class="cell"></div><div class="cell on"></div><div class="cell"></div>
+    <div class="cell"></div><div class="cell"></div><div class="cell on"></div><div class="cell"></div><div class="cell"></div>
+    <div class="cell"></div><div class="cell on"></div><div class="cell"></div><div class="cell on"></div><div class="cell"></div>
+    <div class="cell on"></div><div class="cell on"></div><div class="cell"></div><div class="cell on"></div><div class="cell on"></div>
+  </div>
+  <div class="badge">No ads · No tracking · One purchase</div>
+
+  <div class="feat"><b>Always solvable.</b> Every puzzle is verified to have a single unique solution — pure logic, never guesswork.</div>
+  <div class="feat"><b>Daily puzzle.</b> One shared challenge worldwide, every day. Keep your streak alive.</div>
+  <div class="feat"><b>Satisfying reveal.</b> Finish the grid and watch the hidden pixel art bloom.</div>
+  <div class="feat"><b>Privacy first.</b> No account, no ads, no analytics. Everything stays on your device.</div>
+
+  <h2>How to play</h2>
+  <p>Numbers on the edges tell you the runs of filled cells in each row and column. Fill cells, mark the rest with crosses, and use pure deduction to reveal the picture.</p>
+
+  <footer>© 2026 phinn · <a href="index_privacy.html">Privacy Policy</a></footer>
+</div>
+</body>
+</html>
