@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minebreaker — Minesweeper Roguelite Digger</title>
+<style>
+:root{
+  --bg:#0C0D1E; --surface:#151630; --surface2:#1D1F3E; --line:#2C2E52;
+  --text:#EEF0F8; --muted:#9AA0C0; --dim:#5F6488;
+  --gold:#F0C060;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display",Inter,system-ui,sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:var(--gold);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:50;background:rgba(12,13,30,.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:58px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:600;font-size:15px;color:var(--text)}
+.brand .mark{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#2ECCB2 0%,#745CE0 55%,#F0C060 100%);display:flex;align-items:center;justify-content:center;color:#0C0D1E;font-weight:800;font-size:15px}
+.back-link{color:var(--muted);font-size:13px}
+header{padding:64px 0 36px;text-align:center}
+h1{font-size:40px;font-weight:800;letter-spacing:-.01em;margin-bottom:10px}
+.tagline{color:var(--gold);font-size:17px;font-weight:600}
+.meta{color:var(--dim);font-size:13px;font-family:ui-monospace,monospace;margin-top:8px}
+main{padding:12px 0 80px}
+.card{border:1px solid var(--line);border-radius:16px;background:var(--surface);padding:30px 32px;margin-bottom:20px}
+.card h2{font-size:20px;margin-bottom:12px}
+.card p{color:var(--muted);margin-bottom:10px}
+.card p:last-child{margin-bottom:0}
+ul{margin:8px 0 0 20px;color:var(--muted)}
+li{margin-bottom:6px}
+.download{text-align:center;margin:26px 0 6px}
+.btn{display:inline-block;background:var(--gold);color:#0C0D1E;font-weight:700;padding:13px 34px;border-radius:14px;font-size:16px}
+.btn:hover{opacity:.9;text-decoration:none}
+footer{text-align:center;color:var(--dim);font-size:13px;padding:20px 0 40px}
+</style>
+</head>
+<body>
+<nav><div class="wrap nav">
+  <a class="brand" href="https://phinn.github.io/kinet/"><div class="mark">K</div><span>KinetAios</span></a>
+  <a class="back-link" href="privacy.html">Privacy Policy</a>
+</div></nav>
+
+<header class="wrap">
+  <h1>⛏ Minebreaker</h1>
+  <div class="tagline">Minesweeper, broken open. Dig the vein, dodge the blast, build your deck.</div>
+  <div class="meta">iOS 17+ · Free · No ads · No tracking</div>
+</header>
+
+<main class="wrap">
+  <div class="card">
+    <h2>The classic, rebuilt as a dig site</h2>
+    <p>Every minefield is a mine vein. Clear the floor, pocket the ore, then choose one of three cards to push deeper — shields, scrying, auto-flagging, doubling gambles. The further down you go, the richer and deadlier the vein.</p>
+  </div>
+  <div class="card">
+    <h2>Why it sticks</h2>
+    <ul>
+      <li><b>Runs, not puzzles.</b> Chained reveals feel like mining; death sends you back to Floor 1 with more knowledge.</li>
+      <li><b>8-card pool.</b> Build a different engine every run — tank it with Defuse, or sprint with the Gambler.</li>
+      <li><b>Minutes to learn.</b> Tap to dig, long-press to flag. Everything else is the minefield you already know.</li>
+      <li><b>Offline forever.</b> No account, no network, no interruptions. Your save lives on your device.</li>
+    </ul>
+  </div>
+  <div class="download"><a class="btn" href="https://apps.apple.com/">Download on the App Store</a></div>
+</main>
+
+<footer class="wrap">© 2026 KinetAios · <a href="privacy.html">Privacy Policy</a> · <a href="mailto:phinn@outlook.com">phinn@outlook.com</a></footer>
+</body>
+</html>
