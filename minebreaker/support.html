@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Minebreaker</title>
+<style>
+:root{
+  --bg:#F7F4EC; --surface:#FFFFFF; --surface2:#F1ECDE; --line:#DED6C4;
+  --text:#241F1A; --muted:#6A6156; --dim:#9A9184;
+  --gold:#C9922A; --ore:#B4761C; --teal:#2F7D6B;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",Inter,system-ui,sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:var(--ore);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:720px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:50;background:rgba(247,244,236,.88);backdrop-filter:blur(20px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:58px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;color:var(--text)}
+.brand .mark{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#E8B64C,#C9922A);display:flex;align-items:center;justify-content:center;color:#241F1A;font-weight:800;font-size:14px}
+.back-link{color:var(--muted);font-size:13px}
+header{padding:56px 0 30px;text-align:center}
+h1{font-size:38px;font-weight:800;letter-spacing:-.01em;margin-bottom:10px}
+.meta{color:var(--dim);font-size:13px;font-family:ui-monospace,monospace}
+main{padding:12px 0 80px}
+.card{border:1px solid var(--line);border-radius:16px;background:var(--surface);padding:28px 30px;margin-bottom:20px}
+.card h2{font-size:19px;font-weight:700;margin-bottom:13px;display:flex;align-items:center;gap:10px}
+.card h2 .k{font-family:ui-monospace,monospace;font-size:12px;color:var(--ore);border:1px solid var(--line);border-radius:6px;padding:2px 8px;background:var(--surface2)}
+.card p{font-size:14.5px;color:var(--muted);margin-bottom:10px}
+.card p:last-child{margin-bottom:0}
+.card ul{list-style:none;margin-top:6px}
+.card li{font-size:14.5px;color:var(--muted);padding:7px 0 7px 26px;position:relative;border-bottom:1px dashed var(--line)}
+.card li:last-child{border-bottom:0}
+.card li::before{content:"→";position:absolute;left:2px;color:var(--teal);font-weight:700}
+.card li b{color:var(--text);font-weight:600}
+.contact{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}
+.contact a{display:inline-block;background:var(--gold);color:#241F1A;font-weight:700;padding:12px 26px;border-radius:12px;font-size:15px}
+.contact a:hover{opacity:.9;text-decoration:none}
+.contact a.ghost{background:transparent;border:1px solid var(--line);color:var(--text)}
+footer{padding:28px 0 56px;color:var(--dim);font-size:13px;text-align:center;border-top:1px solid var(--line)}
+footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap nav">
+  <a class="brand" href="index.html"><div class="mark">M</div><span>Minebreaker</span></a>
+  <a class="back-link" href="index.html">← Back to Minebreaker</a>
+</div></nav>
+
+<header class="wrap">
+  <h1>Support</h1>
+  <div class="meta">Minebreaker for iOS · We usually reply within a few days</div>
+</header>
+
+<main class="wrap">
+
+  <div class="card">
+    <h2><span class="k">1</span> Contact</h2>
+    <p>Bug reports, feature requests, or just a question about a run — email us directly. It reaches the developer, not a ticket robot.</p>
+    <div class="contact">
+      <a href="mailto:phinn@outlook.com">Email phinn@outlook.com</a>
+      <a class="ghost" href="privacy-minebreaker.html">Privacy Policy</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2><span class="k">2</span> Frequently Asked</h2>
+    <ul>
+      <li><b>How do I play?</b> Tap a tile to dig. Hold a tile to plant a flag. Clear every safe tile on a floor to open the card shop, then pick one of three cards to descend deeper.</li>
+      <li><b>Why did I lose my streak?</b> Streaks advance when you clear a floor in Daily Challenge mode. Finishing a run on a mine does not break it; missing a day does.</li>
+      <li><b>Where is my progress saved?</b> On your device only. There is no account and no cloud sync, so uninstalling the app clears everything. That also means your save cannot be restored on a new device.</li>
+      <li><b>Is the game offline?</b> Completely. Minebreaker makes no network requests at all, so it works in airplane mode.</li>
+      <li><b>How do I turn the sound off?</b> Tap the ♪ button in the top-right of the game board.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2><span class="k">3</span> Troubleshooting</h2>
+    <ul>
+      <li><b>The board looks squashed.</b> Minebreaker is designed for portrait iPhone. Rotate back to portrait and reopen the app if the layout looks off.</li>
+      <li><b>Nothing happens when I tap.</b> If a floor-clear or cave-in panel is open, tap it to dismiss it first, then dig.</li>
+      <li><b>Daily Challenge looks different from my friend's.</b> That is intended: every player gets the same board for a given day, so runs are directly comparable.</li>
+    </ul>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap">© 2026 phinn · <a href="index.html">Minebreaker</a> · <a href="privacy-minebreaker.html">Privacy Policy</a></div>
+</footer>
+
+</body>
+</html>
