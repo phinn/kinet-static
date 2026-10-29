@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paravent — A Game Master Screen for Your Foldable</title>
+<style>
+:root{
+  --paper:#F6EFE0; --paper2:#EFE5CE; --line:#DACBA8;
+  --ink:#211A16; --muted:#7F705E; --ember:#BF4929; --gold:#C99848;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:var(--ember);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:0;z-index:50;background:rgba(246,239,224,.92);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:56px}
+.brand{font-weight:700;letter-spacing:.18em;font-size:14px;color:var(--ink)}
+.nav a{font-size:14px;font-family:-apple-system,system-ui,sans-serif}
+header{padding:58px 0 30px;text-align:center;border-bottom:3px double var(--line)}
+h1{font-size:40px;font-weight:700;margin-bottom:8px}
+.tagline{color:var(--ember);font-size:17px;font-style:italic}
+.meta{color:var(--muted);font-size:13px;font-family:ui-monospace,Menlo,monospace;margin-top:10px}
+main{padding:26px 0 70px}
+.card{border:1px solid var(--line);border-radius:14px;background:var(--paper2);padding:26px 28px;margin-bottom:18px}
+.card h2{font-size:20px;margin-bottom:10px}
+.card p{color:var(--muted);margin-bottom:10px}
+.card p:last-child{margin-bottom:0}
+ul{margin:6px 0 0 20px;color:var(--muted)}
+li{margin-bottom:6px}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:18px 0 44px;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<nav><div class="wrap nav">
+  <div class="brand">PARAVENT</div>
+  <a href="support.html">Support</a>
+</div></nav>
+
+<header class="wrap">
+  <h1>Paravent</h1>
+  <div class="tagline">A game master screen that stands on your table.</div>
+  <div class="meta">Foldable &amp; iPhone · Buy once · Offline · No account</div>
+</header>
+
+<main class="wrap">
+  <div class="card">
+    <h2>The screen between you and the table</h2>
+    <p>Tent your foldable open like a desk calendar: the top screen faces the players — a scene card, the initiative order and a mood timer, nothing else. The bottom screen faces you: initiative, hit points, conditions and a dice tray that reads expressions like 2d6+3.</p>
+    <p>On a regular iPhone, Paravent runs as a flat workbench — members on the left, details on the right. On iPad, the whole war room spreads out side by side.</p>
+  </div>
+  <div class="card">
+    <h2>What's inside</h2>
+    <ul>
+      <li>One-tap initiative for the whole table — roll all, delay, advance, push to the player face</li>
+      <li>Hit points with ±1 / ±5 / ±10 quick steps, 14 conditions and concentration saves</li>
+      <li>A dice tray that parses — advantage, disadvantage, and a running history</li>
+      <li>Scene cards with twelve handcrafted moods, pushed to the players in one tap</li>
+      <li>A bestiary of 30 creatures (SRD 5.1 subset, CC-BY-4.0) — searchable, offline</li>
+      <li>Session clock and a closed-cover display that keeps the time when the lid shuts</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h2>Privacy, in one line</h2>
+    <p>No account, no ads, no tracking, no network. Your campaigns never leave the device. Read the <a href="privacy.html">privacy policy</a>.</p>
+  </div>
+</main>
+
+<footer>Paravent · support: phinn@outlook.com · © 2026 phinn</footer>
+</body>
+</html>
