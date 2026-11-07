@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CubeLike — Support</title>
+<meta name="description" content="Support and FAQ for CubeLike, the chain-reaction puzzle on a 3D cube. Fully offline.">
+<style>
+:root{
+  --paper:#FDF9F0; --panel:#FFFFFF; --line:#EAE0D0;
+  --ink:#3E3024; --sub:#7A6A58; --dim:#A79781;
+  --accent:#C46C34; --accent2:#E0965C; --teal:#3E8E7E;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:linear-gradient(180deg,#FDF9F0,#F5EEDF);color:var(--ink);font-family:-apple-system,"SF Pro Text","PingFang SC",sans-serif;line-height:1.85;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.page{max-width:700px;margin:0 auto;padding:60px 26px 56px}
+.badge{display:inline-block;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--accent2);border:1px solid var(--accent2);border-radius:999px;padding:5px 14px;margin-bottom:18px}
+h1{font-size:40px;font-weight:800;color:var(--accent);letter-spacing:-.01em}
+h1 em{font-style:normal;color:var(--ink)}
+.intro{font-size:19px;color:var(--sub);margin:14px 0 30px;max-width:560px}
+.blk{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--accent2);border-radius:12px;padding:22px 24px;margin:16px 0}
+.blk h2{font-size:16px;color:var(--accent);margin-bottom:8px;font-weight:700}
+.blk p,.blk li{font-size:14.5px;color:var(--sub)}
+.blk ul{padding-left:20px}
+.blk li{margin:6px 0}
+.blk li b{color:var(--ink)}
+.ask{margin-top:30px;font-size:15px}
+.ask a{color:var(--accent);font-weight:600}
+.priv{font-size:13px;color:var(--dim);margin-top:8px}
+.priv a{color:var(--accent)}
+footer{margin-top:48px;padding-top:20px;border-top:1px dashed var(--line);font-size:12.5px;color:var(--dim)}
+</style>
+</head>
+<body>
+<div class="page">
+<span class="badge">Support · FAQ</span>
+<h1>CubeLike<em> — Help</em></h1>
+<p class="intro">Questions about the cube, the cascade, or your stars — start here. Most answers are one tap away.</p>
+
+<div class="blk">
+<h2>Playing basics</h2>
+<ul>
+  <li><b>How do I play?</b> Tap any tile with 1–2 arrows. Each tap adds one arrow; at three arrows the tile bursts and fires in four directions, charging its neighbors.</li>
+  <li><b>What is a chain?</b> When a burst charges a neighbor to three, that neighbor bursts too — and so on. Each link in the cascade multiplies your score (10 × depth).</li>
+  <li><b>What do the board colors mean?</b> Dark blocked tiles are solid: they never burst and never count. Everything else is fair game, on every face of the cube.</li>
+  <li><b>How do I win a level?</b> Reach the target score before your moves run out. Finishing with 3+ moves left earns 3 stars; with 1–2 left, 2 stars; otherwise 1.</li>
+  <li><b>Why did my moves not go down?</b> Tiles charged by a cascade are free — only the tile you tap yourself spends a move.</li>
+</ul>
+</div>
+
+<div class="blk">
+<h2>Frequently asked</h2>
+<ul>
+  <li><b>Where is my progress saved?</b> On your device only — levels, stars and the board in progress. No account, no cloud, no sync. Uninstalling clears everything.</li>
+  <li><b>Is the game online?</b> No. CubeLike makes no network requests at all — no ads, no analytics, nothing to sign into.</li>
+  <li><b>How do levels work?</b> Every level is dealt from a fixed seed: same number, same board. Moves shrink and targets rise as you climb, and more blocked tiles join the board.</li>
+  <li><b>Can I replay earlier levels?</b> Yes — the level grid stays open for everything you have unlocked, and you can chase a better star rating any time.</li>
+  <li><b>Which languages are supported?</b> English, 简体中文, 繁體中文 and 日本語 — CubeLike follows your device's language automatically.</li>
+  <li><b>Does it run on iPad?</b> CubeLike is designed for iPhone and plays great one-handed.</li>
+</ul>
+</div>
+
+<div class="blk">
+<h2>Troubleshooting</h2>
+<ul>
+  <li><b>A tile won't tap.</b> Empty tiles (no arrows) can't be charged directly — start from a tile that already shows 1 or 2 arrows, or burst a neighbor into it.</li>
+  <li><b>I ran out of moves.</b> Retry the level and look for a burst point beside two charged tiles — deep chains beat scattered taps every time.</li>
+  <li><b>Sound is off?</b> Check the mute switch and volume. CubeLike's sounds follow your device's silent state.</li>
+</ul>
+</div>
+
+<p class="ask">Still stuck? <a href="mailto:phinn@outlook.com">Email phinn@outlook.com</a></p>
+<p class="priv">Privacy: we collect nothing — see the <a href="privacy.html">privacy policy</a>.</p>
+
+<footer>© 2026 phinn · <a href="index.html">CubeLike</a> · <a href="privacy.html">Privacy Policy</a></footer>
+</div>
+</body>
+</html>

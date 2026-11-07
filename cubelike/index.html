@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CubeLike — a chain-reaction puzzle on a living cube</title>
+<meta name="description" content="Tap tiles on a 3D cube, charge arrows, burst and chain across all six faces. 54 tiles, one connective puzzle. Fully offline.">
+<style>
+:root{
+  --paper:#FDF9F0; --panel:#FFFFFF; --line:#EAE0D0;
+  --ink:#3E3024; --sub:#7A6A58; --dim:#A79781;
+  --accent:#C46C34; --accent2:#E0965C; --teal:#3E8E7E;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:linear-gradient(180deg,#FDF9F0,#F5EEDF);color:var(--ink);font-family:-apple-system,"SF Pro Display","PingFang SC",sans-serif;line-height:1.8;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.page{max-width:720px;margin:0 auto;padding:60px 26px 56px}
+.badge{display:inline-block;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--accent2);border:1px solid var(--accent2);border-radius:999px;padding:5px 14px;margin-bottom:18px}
+h1{font-size:44px;font-weight:800;letter-spacing:-.01em;color:var(--accent)}
+h1 em{font-style:normal;color:var(--ink)}
+.intro{font-size:19px;color:var(--sub);margin:14px 0 34px;max-width:600px}
+.cube{display:inline-grid;grid-template-columns:repeat(3,34px);gap:4px;vertical-align:-10px;margin-right:12px}
+.cube i{width:34px;height:34px;border-radius:8px;background:var(--panel);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-style:normal;font-weight:800;color:var(--accent);font-size:15px}
+.blk{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--accent2);border-radius:12px;padding:22px 24px;margin:16px 0}
+.blk h2{font-size:17px;color:var(--accent);margin-bottom:10px;font-weight:700}
+.blk p,.blk li{font-size:14.5px;color:var(--sub)}
+.blk ul{padding-left:20px}
+.blk li{margin:6px 0}
+.blk li b{color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:16px}
+.g{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
+.g b{display:block;font-size:14px;color:var(--accent);margin-bottom:3px}
+.g span{font-size:13px;color:var(--sub)}
+.links{margin-top:28px;font-size:15px}
+.links a{font-weight:600;margin-right:22px}
+footer{margin-top:48px;padding-top:20px;border-top:1px dashed var(--line);font-size:12.5px;color:var(--dim)}
+</style>
+</head>
+<body>
+<div class="page">
+<span class="badge">Puzzle · Chain Reaction · Offline</span>
+<h1><span class="cube"><i>1</i><i>2</i><i>3</i><i>+</i><i>+</i><i>+</i><i>▮</i><i>▮</i><i>▮</i></span>CubeLike<em> — 立方连锁</em></h1>
+<p class="intro">A take-turns puzzle wrapped around a cube. Tap a tile to charge its arrows; at three it bursts and fires across the faces — one good tap can sweep the whole cube.</p>
+
+<div class="blk">
+<h2>How it plays</h2>
+<ul>
+  <li><b>Tap to charge.</b> Every tap adds one arrow to a tile. Three arrows and it bursts.</li>
+  <li><b>Bursts chain.</b> A burst shoots four ways, charging neighbors — a cascade that crosses edges and wraps around all six faces.</li>
+  <li><b>Depth pays.</b> Your score is 10 points × chain depth, so one deep cascade beats a dozen shallow taps.</li>
+  <li><b>Cascade taps are free.</b> Tiles lit up by a chain don't spend your moves — only the tap you make does.</li>
+</ul>
+</div>
+
+<div class="grid">
+  <div class="g"><b>54 tiles, 6 faces</b><span>One board that folds around a cube.</span></div>
+  <div class="g"><b>Level mode</b><span>Hand-tuned curve: fewer moves, higher targets, more blocks.</span></div>
+  <div class="g"><b>Star ratings</b><span>Clear with moves to spare to earn 3 stars.</span></div>
+  <div class="g"><b>100% offline</b><span>No account, no ads, no network. Ever.</span></div>
+</div>
+
+<div class="links">
+  <a href="support.html">Support &amp; FAQ</a>
+  <a href="privacy.html">Privacy Policy</a>
+</div>
+
+<footer>© 2026 phinn · CubeLike for iOS · English / 简体中文 / 繁體中文 / 日本語</footer>
+</div>
+</body>
+</html>
