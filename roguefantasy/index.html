@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RogueFantasy — Turn-Based JRPG Roguelike</title>
+<style>
+:root{
+  --bg:#0C0D1E; --surface:#151630; --surface2:#1D1F3E; --line:#2C2E52;
+  --text:#EEF0F8; --muted:#9AA0C0; --dim:#5F6488;
+  --gold:#F0C060;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display",Inter,system-ui,sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:var(--gold);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:50;background:rgba(12,13,30,.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:58px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:600;font-size:15px;color:var(--text)}
+.brand .mark{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#2ECCB2 0%,#745CE0 55%,#F0C060 100%);display:flex;align-items:center;justify-content:center;color:#0C0D1E;font-weight:800;font-size:15px}
+.back-link{color:var(--muted);font-size:13px}
+header{padding:64px 0 36px;text-align:center}
+h1{font-size:40px;font-weight:800;letter-spacing:-.01em;margin-bottom:10px}
+.tagline{color:var(--gold);font-size:17px;font-weight:600}
+.meta{color:var(--dim);font-size:13px;font-family:ui-monospace,monospace;margin-top:8px}
+main{padding:12px 0 80px}
+.card{border:1px solid var(--line);border-radius:16px;background:var(--surface);padding:30px 32px;margin-bottom:20px}
+.card h2{font-size:20px;margin-bottom:12px}
+.card p{color:var(--muted);margin-bottom:10px}
+.card p:last-child{margin-bottom:0}
+ul{margin:8px 0 0 20px;color:var(--muted)}
+li{margin-bottom:6px}
+.download{text-align:center;margin:26px 0 6px}
+.btn{display:inline-block;background:var(--gold);color:#0C0D1E;font-weight:700;padding:13px 34px;border-radius:14px;font-size:16px}
+.btn:hover{opacity:.9;text-decoration:none}
+footer{text-align:center;color:var(--dim);font-size:13px;padding:20px 0 40px}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap nav">
+  <a class="brand" href="index.html"><div class="mark">R</div><span>RogueFantasy</span></a>
+  <a class="back-link" href="support.html">Support</a>
+</div></nav>
+
+<header class="wrap">
+  <h1>RogueFantasy</h1>
+  <div class="tagline">A turn-based JRPG roguelike in a living 3D world</div>
+  <div class="meta">3 heroes · 4 acts · day-night cycle · weather · chocobos & airships</div>
+</header>
+
+<main class="wrap">
+
+  <div class="card">
+    <h2>The Mist takes one person every spring</h2>
+    <p>This year it took the queen's child. Lead a knight, a black mage and a white mage through a hand-built 3D overworld — forests, seas, mountains and a floating citadel — to break the thousand-year mist.</p>
+    <p>Classic turn-based command battles meet roguelike runs: every victory feeds a draft of relics and level-up cards that reshape your party. Four acts, one ending, and a New Game+ that keeps your heroes and raises the stakes.</p>
+  </div>
+
+  <div class="card">
+    <h2>A world that lives without you</h2>
+    <ul>
+      <li><b>Day-night cycle</b> — the sun crosses the sky, dusk paints the horizon, stars come out at night.</li>
+      <li><b>Weather</b> — rain sweeps the forest; the volcano rains embers; the void citadel breathes violet dust.</li>
+      <li><b>Region moods</b> — light and color shift as you walk from shore to deep woods to mountain passes.</li>
+      <li><b>Chocobo riding</b> doubles your speed; an <b>airship</b> unlocks in the third act and crosses the sea in one tap.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Fights that feel like FF</h2>
+    <ul>
+      <li>Turn forecast strip, limit-break cut-ins, hit shake and boss vignettes.</li>
+      <li>Enemies stand on a stone arena; your party stands opposite.</li>
+      <li>Every victory drafts relics — build a different engine every run.</li>
+    </ul>
+  </div>
+
+  <div class="download">
+    <a class="btn" href="support.html">Support & FAQ</a>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap">© 2026 phinn · <a href="index.html">RogueFantasy</a> · <a href="privacy.html">Privacy Policy</a></div>
+</footer>
+
+</body>
+</html>
