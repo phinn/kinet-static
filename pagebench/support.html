@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pagebench — Support</title>
+<meta name="description" content="Support and FAQ for Pagebench: importing PDFs, pencil and finger inking, page-note pairing, export, and deleting documents.">
+<style>
+:root{
+  --paper:#F2EEE4; --panel:#FFFDF6; --line:#E2DCCE;
+  --ink:#1C2A4A; --sub:#6E768A; --dim:#9BA1B2;
+  --accent:#C44A3A; --pine:#29735A;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:linear-gradient(180deg,#F2EEE4,#EAE5D6);color:var(--ink);font-family:-apple-system,"SF Pro Text","PingFang SC",sans-serif;line-height:1.85;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.page{max-width:700px;margin:0 auto;padding:60px 26px 56px}
+.badge{display:inline-block;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--pine);border:1px solid var(--pine);border-radius:999px;padding:5px 14px;margin-bottom:18px}
+h1{font-size:40px;font-weight:800;color:var(--accent);letter-spacing:-.01em}
+h1 em{font-style:normal;color:var(--ink)}
+.intro{font-size:19px;color:var(--sub);margin:14px 0 30px;max-width:560px}
+.blk{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--pine);border-radius:12px;padding:22px 24px;margin:16px 0}
+.blk h2{font-size:16px;color:var(--accent);margin-bottom:8px;font-weight:700}
+.blk p,.blk li{font-size:14.5px;color:var(--sub)}
+.blk ul{padding-left:20px}
+.blk li{margin:6px 0}
+.blk li b{color:var(--ink)}
+.big{background:var(--panel);border:1px solid var(--pine);border-radius:12px;padding:22px 24px;margin:16px 0}
+.big p{font-size:15.5px;color:var(--ink);font-weight:600}
+.foot{margin-top:34px;font-size:12.5px;color:var(--dim)}
+.foot a{color:var(--sub)}
+</style>
+</head>
+<body>
+<div class="page">
+  <span class="badge">Support</span>
+  <h1>Pagebench<em> — Support &amp; FAQ</em></h1>
+  <p class="intro">Answers to the questions we see most. If yours isn't here, email us — a human reads it.</p>
+
+  <div class="big"><p>Contact: <b>phinn@outlook.com</b> — we reply within two business days.</p></div>
+
+  <div class="blk"><h2>Import: nothing happens when I pick a file</h2>
+    <p>Pagebench accepts PDF files up to 50&nbsp;MB and 2,000 pages. Password-protected PDFs are rejected — remove the password first. If the file still fails, it is likely damaged; try re-downloading it.</p></div>
+
+  <div class="blk"><h2>The pencil doesn't draw, only nothing happens</h2>
+    <p>By default only Apple Pencil draws, so your palm never leaves stray marks. Turn on <b>Settings → Ink → Draw with finger</b> if you want finger or capacitive-touch inking.</p></div>
+
+  <div class="blk"><h2>My notes "disappeared" when I turned flipping off</h2>
+    <p>They didn't. With flipping set to <b>separate</b>, the note pane stays on its page while the document moves. A badge ("Unlinked · note page N") tells you where you are, and <b>Back to this page</b> re-pairs them in one tap.</p></div>
+
+  <div class="blk"><h2>Can I link a note to a different page?</h2>
+    <p>Yes — tap <b>Back to this page</b> while viewing the page you want, or use the link button. If the target page already has ink, the two note pages swap places so nothing is overwritten.</p></div>
+
+  <div class="blk"><h2>What does "orphan pages" mean in Settings?</h2>
+    <p>If a PDF was replaced with a shorter version, notes on pages beyond the new end become "orphans". We keep them until you choose <b>Clean up orphan pages</b>, and the confirmation tells you how many contain ink before anything is removed.</p></div>
+
+  <div class="blk"><h2>Exported images</h2>
+    <p>The share button exports the current document page and its note page as one full-resolution PNG with no watermark. It goes through the standard iOS share sheet — Photos, Mail, Messages, anywhere.</p></div>
+
+  <div class="blk"><h2>Deleting documents</h2>
+    <p>Deleting a document removes its PDF and all of its note pages from your device. The confirmation dialog shows how many note pages will go before you confirm.</p></div>
+
+  <div class="blk"><h2>Privacy</h2>
+    <p>Pagebench has no network access and collects nothing. Read the full policy <a href="privacy.html">here</a>.</p></div>
+
+  <p class="foot"><a href="index.html">Pagebench home</a> · <a href="privacy.html">privacy policy</a> · phinn@outlook.com</p>
+</div>
+</body>
+</html>
