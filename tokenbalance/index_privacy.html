@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TokenBalance — Privacy Policy / 隐私政策</title>
+<style>
+  :root { --bg:#f6f5f2; --card:#ffffff; --ink:#16181d; --dim:#6d727b; --accent:#2f6f4f; --line:#e6e3dc; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--ink); font-family:-apple-system,system-ui,"PingFang SC",sans-serif;
+         display:flex; justify-content:center; min-height:100vh; }
+  .wrap { max-width:660px; padding:52px 28px 72px; }
+  h1 { font-size:32px; font-weight:900; color:var(--accent); margin-bottom:6px; letter-spacing:-.5px; }
+  .sub { color:var(--dim); font-size:14px; margin-bottom:32px; }
+  h2 { font-size:18px; font-weight:800; margin:30px 0 8px; }
+  p { font-size:15px; line-height:1.75; color:var(--dim); margin-bottom:10px; }
+  ul { margin:0 0 12px 20px; }
+  li { font-size:15px; line-height:1.75; color:var(--dim); margin-bottom:4px; }
+  b { color:var(--ink); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px 20px; margin:16px 0; }
+  hr { border:0; border-top:1px solid var(--line); margin:44px 0 32px; }
+  footer { margin-top:44px; font-size:13px; color:var(--dim); }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>TokenBalance 隐私政策</h1>
+  <div class="sub">TokenBalance · 最后更新：2026 年 11 月 · English below</div>
+
+  <h2>一句话版本</h2>
+  <div class="card">
+    <p style="margin:0"><b>TokenBalance 没有服务器，也不收集任何数据。</b>无账号、无注册、无广告、无统计 SDK、无第三方追踪。你的 API Key 和余额数据只存在于你自己的设备上。</p>
+  </div>
+
+  <h2>它做什么</h2>
+  <p>TokenBalance 是一个本地看板，把你在各家 AI 服务商（如 DeepSeek、OpenAI、智谱、Kimi、MiniMax、阶跃星辰、OpenRouter 等）的账户余额、配额用量和消耗趋势汇总到一处显示。</p>
+
+  <h2>你的数据</h2>
+  <ul>
+    <li><b>API Key / Token：</b>保存在本机的 iOS 钥匙串（Keychain）中，<b>不会</b>上传到任何服务器，也不会同步到 iCloud。</li>
+    <li><b>账户名称、分组、余额快照：</b>保存在本机 App 的本地存储中。</li>
+    <li><b>汇率设置：</b>保存在本机偏好设置中。</li>
+    <li>开发者无法访问上述任何数据。卸载 App 即全部删除。</li>
+  </ul>
+
+  <h2>网络请求</h2>
+  <p>当你点击刷新（或开启自动刷新）时，App 会用你填写的 Key <b>直接</b>向对应服务商的官方 API 发起请求，读取余额与用量。请求从你的设备直达服务商，<b>不经过开发者或任何中间服务器</b>。这些请求同时受对应服务商的隐私政策约束。</p>
+  <p>若你设置自定义汇率，App 会向公开汇率接口请求当前汇率，不携带任何身份信息。</p>
+
+  <h2>权限说明</h2>
+  <ul>
+    <li><b>通知：</b>仅在你主动开启「配额告警」时用于发送本地通知。通知在本机生成，不经过推送服务器。</li>
+    <li>App 不申请通讯录、定位、相机、麦克风、健康、照片等任何敏感权限。</li>
+  </ul>
+
+  <h2>儿童</h2>
+  <p>本 App 不面向 13 岁以下儿童，也不会有意收集其任何信息。</p>
+
+  <h2>变更</h2>
+  <p>若本政策发生实质变更，将随 App 更新在本页公布。</p>
+
+  <h2>联系</h2>
+  <p>有任何隐私相关疑问：<a href="mailto:phinn@foxmail.com">phinn@foxmail.com</a></p>
+
+  <hr>
+
+  <h1 style="font-size:26px">Privacy Policy</h1>
+  <div class="sub">TokenBalance · Last updated: November 2026</div>
+
+  <h2>The short version</h2>
+  <div class="card">
+    <p style="margin:0"><b>TokenBalance has no server and collects no data.</b> No account, no sign-up, no ads, no analytics SDK, no third-party tracking. Your API keys and balance data never leave your device.</p>
+  </div>
+
+  <h2>What it does</h2>
+  <p>TokenBalance is a local dashboard that gathers the balances, quota usage and spend trends of your AI provider accounts (DeepSeek, OpenAI, Zhipu, Kimi, MiniMax, StepFun, OpenRouter and others) into one screen.</p>
+
+  <h2>Your data</h2>
+  <ul>
+    <li><b>API keys / tokens</b> are stored in the on-device iOS Keychain. They are never uploaded and never synced to iCloud.</li>
+    <li><b>Account names, groups and balance history</b> are stored in the app's local storage on your device.</li>
+    <li><b>Exchange rate preference</b> is stored in local preferences.</li>
+    <li>The developer has no access to any of it. Deleting the app deletes everything.</li>
+  </ul>
+
+  <h2>Network requests</h2>
+  <p>When you refresh (or enable auto-refresh), the app calls each provider's official API <b>directly</b> from your device using the key you entered, to read balances and usage. Requests go straight from your device to the provider — <b>never through the developer or any intermediary server</b>. Those requests are also governed by the provider's own privacy policy.</p>
+  <p>If you set a custom exchange rate, the app queries a public rate endpoint with no identifying information.</p>
+
+  <h2>Permissions</h2>
+  <ul>
+    <li><b>Notifications:</b> used only for local quota alerts you explicitly enable. Alerts are generated on-device, not via a push server.</li>
+    <li>The app requests no access to contacts, location, camera, microphone, health or photos.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>The app is not directed to children under 13 and does not knowingly collect information from them.</p>
+
+  <h2>Changes</h2>
+  <p>Material changes to this policy will be published on this page with an app update.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:phinn@foxmail.com">phinn@foxmail.com</a></p>
+
+  <footer>© 2026 TokenBalance</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TokenBalance — Support</title>
+<meta name="description" content="Support and FAQ for TokenBalance: adding providers, API keys, quota windows, alerts, CSV export, and where your data is stored.">
+<style>
+:root{--bg:#f6f5f2;--panel:#fff;--line:#e6e3dc;--ink:#16181d;--sub:#6d727b;--accent:#2f6f4f}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:-apple-system,system-ui,"PingFang SC",sans-serif;line-height:1.8;-webkit-font-smoothing:antialiased}
+.page{max-width:700px;margin:0 auto;padding:60px 26px 72px}
+.badge{display:inline-block;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:5px 14px;margin-bottom:18px}
+h1{font-size:38px;font-weight:900;color:var(--accent);letter-spacing:-.02em}
+.intro{font-size:18px;color:var(--sub);margin:14px 0 30px}
+.blk{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin:14px 0}
+.blk h2{font-size:16px;font-weight:800;margin-bottom:8px}
+.blk p,.blk li{font-size:14.5px;color:var(--sub)}
+.blk ul{padding-left:20px}
+.blk li{margin:7px 0}
+.blk b{color:var(--ink)}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.sep{border:0;border-top:1px solid var(--line);margin:40px 0 32px}
+footer{margin-top:44px;font-size:13px;color:var(--sub)}
+</style>
+</head>
+<body>
+<div class="page">
+  <span class="badge">Support</span>
+  <h1>TokenBalance 支持</h1>
+  <p class="intro">把所有 AI 服务商的余额、配额和消耗收进一块屏。遇到问题先看下面，没解决就写信给我。</p>
+
+  <div class="blk">
+    <h2>怎么添加一个服务</h2>
+    <ul>
+      <li>点右下角 <b>+</b>，选服务类型（DeepSeek / OpenAI / 智谱 / Kimi / MiniMax / 阶跃星辰 / OpenRouter / 手动登记）。</li>
+      <li>填一个名称（例如「主账号」），粘贴该服务商控制台里的 <b>API Key</b>。</li>
+      <li>保存后回到首页，下拉刷新即可看到余额。</li>
+    </ul>
+  </div>
+
+  <div class="blk">
+    <h2>余额或用量抓不到</h2>
+    <ul>
+      <li>确认 Key 有 <b>读取账单 / 用量</b> 的权限 —— 很多平台的普通推理 Key 只能调用模型，不能查余额。</li>
+      <li>OpenAI 需要的是带 <code>billing</code> 权限的会话 Token，或组织级 API Key；普通 <code>sk-</code> Key 查不到额度。</li>
+      <li>智谱、MiniMax 的「配额窗口」需要额外的第二个 Key，在详情页的 Token 用量一节单独填。</li>
+      <li>仍然失败时，详情页会显示具体错误码和原始返回，方便对照服务商文档。</li>
+    </ul>
+  </div>
+
+  <div class="blk">
+    <h2>配额告警怎么开</h2>
+    <ul>
+      <li>进入服务详情页，设置「余额低于此金额提醒」或「配额剩余低于此 % 提醒」。</li>
+      <li>首次设置会请求通知权限；允许后，每次刷新发现低于阈值就在本机发一条通知。</li>
+      <li>通知在本机生成，不经过任何推送服务器。</li>
+    </ul>
+  </div>
+
+  <div class="blk">
+    <h2>数据存在哪里</h2>
+    <p>API Key 存在本机 <b>钥匙串</b>，其余数据存在 App 的本地存储。没有服务器、没有账号、不上传、不同步 iCloud、无统计 SDK。卸载 App 即全部清除。</p>
+    <p>详见 <a href="index_privacy.html">隐私政策</a>。</p>
+  </div>
+
+  <div class="blk">
+    <h2>换手机怎么迁移</h2>
+    <p>因为密钥刻意不做云同步，换机后需要在新设备上重新填一次 Key。这是隐私设计的代价，不是 Bug。</p>
+  </div>
+
+  <div class="blk">
+    <h2>导出 CSV 打不开 / 乱码</h2>
+    <p>导出文件是 UTF-8 带 BOM 的 CSV，Numbers、Excel、飞书表格都能直接打开。若出现乱码，用「导入为 UTF-8 文本」再试一次。</p>
+  </div>
+
+  <div class="blk">
+    <h2>支持哪些平台</h2>
+    <p>iPhone（iOS 17 及以上）与 iPad，支持深色模式、iPad 与折叠屏展开态的双列布局。界面提供简体中文、繁体中文、English、日本語。</p>
+  </div>
+
+  <hr class="sep">
+
+  <h1 style="font-size:30px">Support (English)</h1>
+  <p class="intro">Balances, quotas and spend for every AI provider — on one screen.</p>
+
+  <div class="blk">
+    <h2>Adding a provider</h2>
+    <p>Tap <b>+</b>, pick the provider type, name it, paste the API key from that provider's console, then pull to refresh on the dashboard.</p>
+  </div>
+
+  <div class="blk">
+    <h2>A balance won't load</h2>
+    <ul>
+      <li>Most providers require a key with <b>billing or usage read</b> permission — a plain inference key usually can't read balances.</li>
+      <li>OpenAI needs a session token with billing access, or an organization API key. A regular <code>sk-</code> key cannot read credit grants.</li>
+      <li>Quota windows for Zhipu and MiniMax need a second key, entered separately under Token Usage in the detail screen.</li>
+      <li>The detail screen shows the exact error and raw response when a refresh fails.</li>
+    </ul>
+  </div>
+
+  <div class="blk">
+    <h2>Where is my data?</h2>
+    <p>API keys live in the on-device Keychain; everything else is in local app storage. No server, no account, no upload, no iCloud sync, no analytics. Deleting the app removes all of it. See the <a href="index_privacy.html">privacy policy</a>.</p>
+  </div>
+
+  <div class="blk">
+    <h2>Contact</h2>
+    <p>Email <a href="mailto:phinn@foxmail.com">phinn@foxmail.com</a> — please include your iOS version, the provider name and the error text shown in the app.</p>
+  </div>
+
+  <footer>© 2026 Kinet · <a href="index_privacy.html">Privacy</a></footer>
+</div>
+</body>
+</html>

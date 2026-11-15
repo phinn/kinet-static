@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TokenBalance — 多家 AI 余额与配额，一屏看清</title>
+<meta name="description" content="TokenBalance 把所有 AI 服务商的余额、配额和消耗收进一块屏。API Key 存在本机钥匙串，不上传、不同步、无账号。">
+<style>
+:root{--bg:#f6f5f2;--panel:#fff;--line:#e6e3dc;--ink:#16181d;--sub:#6d727b;--accent:#2f6f4f}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:-apple-system,system-ui,"PingFang SC",sans-serif;line-height:1.8;-webkit-font-smoothing:antialiased}
+.page{max-width:700px;margin:0 auto;padding:64px 26px 72px}
+.badge{display:inline-block;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:5px 14px;margin-bottom:18px}
+h1{font-size:42px;font-weight:900;color:var(--accent);letter-spacing:-.025em;line-height:1.25}
+h1 em{font-style:normal;color:var(--ink)}
+.intro{font-size:19px;color:var(--sub);margin:16px 0 34px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:560px){.grid{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.card h2{font-size:15px;font-weight:800;margin-bottom:6px;color:var(--accent)}
+.card p{font-size:14px;color:var(--sub)}
+.big{background:var(--panel);border:1px solid var(--accent);border-radius:14px;padding:20px 22px;margin:22px 0}
+.big p{font-size:15px;color:var(--ink);font-weight:600}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+footer{margin-top:46px;font-size:13px;color:var(--sub)}
+</style>
+</head>
+<body>
+<div class="page">
+  <span class="badge">TokenBalance</span>
+  <h1>所有 AI 余额<br><em>一屏看清</em></h1>
+  <p class="intro">你在 DeepSeek、OpenAI、智谱、Kimi、MiniMax 充的钱，还剩多少、还能用几天 —— 打开一个 App 就知道。</p>
+
+  <div class="big">
+    <p>API Key 存在本机钥匙串，不上传、不同步、无账号、无广告、无统计。请求从你的设备直连服务商官方接口。</p>
+  </div>
+
+  <div class="grid">
+    <div class="card"><h2>总资产折算</h2><p>多家服务换成统一币种，一个数字看清家底。</p></div>
+    <div class="card"><h2>配额窗口</h2><p>智谱 Coding、MiniMax Token Plan 的 5 小时 / 每周窗口用了多少。</p></div>
+    <div class="card"><h2>消耗趋势</h2><p>每次刷新留一笔快照，画出余额走势。</p></div>
+    <div class="card"><h2>配额告警</h2><p>低于阈值本地推送，不再突然断供。</p></div>
+    <div class="card"><h2>预估剩余</h2><p>按近期烧钱速度，估算还能撑几天。</p></div>
+    <div class="card"><h2>导出 CSV</h2><p>用表格做自己的账单。</p></div>
+  </div>
+
+  <footer>© 2026 Kinet · <a href="support.html">Support</a> · <a href="index_privacy.html">Privacy</a></footer>
+</div>
+</body>
+</html>
