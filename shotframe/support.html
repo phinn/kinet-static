@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shotframe — Support</title>
+<meta name="description" content="Support and FAQ for Shotframe: importing screenshots, choosing export sizes, editing headlines, and getting images into App Store Connect.">
+<style>
+:root{--bg:#f6f3ec;--panel:#fff;--line:#e4e0d6;--ink:#15171c;--sub:#6e727a;--accent:#2f6f4f}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:-apple-system,system-ui,"PingFang SC",sans-serif;line-height:1.8;-webkit-font-smoothing:antialiased}
+.page{max-width:700px;margin:0 auto;padding:60px 26px 72px}
+.badge{display:inline-block;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:5px 14px;margin-bottom:18px}
+h1{font-size:38px;font-weight:900;color:var(--accent);letter-spacing:-.02em}
+.intro{font-size:18px;color:var(--sub);margin:14px 0 30px}
+.blk{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin:14px 0}
+.blk h2{font-size:16px;font-weight:800;margin-bottom:8px}
+.blk p,.blk li{font-size:14.5px;color:var(--sub)}
+.blk ul{padding-left:20px}
+.blk li{margin:7px 0}
+.blk b{color:var(--ink)}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;background:#efebe1;padding:1px 5px;border-radius:4px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.sep{border:0;border-top:1px solid var(--line);margin:40px 0 32px}
+footer{margin-top:44px;font-size:13px;color:var(--sub)}
+</style>
+</head>
+<body>
+<div class="page">
+  <span class="badge">Support</span>
+  <h1>Shotframe 支持</h1>
+  <p class="intro">把模拟器截图变成 App Store 可以直接上传的首图。遇到问题先看下面。</p>
+
+  <div class="blk">
+    <h2>三步出图</h2>
+    <ul>
+      <li><b>导入</b>：点右下「导入」，从相册选模拟器截图，可一次选多张。</li>
+      <li><b>调</b>：选导出尺寸和配色；点预览或「改文案」写这一页的大标题。</li>
+      <li><b>导出</b>：点「导出」→「存到相册」，或从分享面板存到「文件」。</li>
+    </ul>
+  </div>
+
+  <div class="blk">
+    <h2>四种尺寸对应哪个槽位</h2>
+    <ul>
+      <li><code>6.7″</code> → 1320 × 2868，iPhone 6.7 / 6.9 英寸（必填）</li>
+      <li><code>Duo 展开</code> → 2007 × 2853，iPhone Duo 展开内屏</li>
+      <li><code>Duo 折叠</code> → 1398 × 2034，iPhone Duo 折叠外屏</li>
+      <li><code>iPad 13″</code> → 2064 × 2752，iPad Pro 13 英寸</li>
+    </ul>
+    <p>导出的 PNG 像素与你选的槽位完全一致，拖进 App Store Connect 的上传框不会被二次裁切。</p>
+  </div>
+
+  <div class="blk">
+    <h2>截图在画布里是怎么摆的</h2>
+    <p>按画布宽度铺满，顶部对齐，底部自然溢出并被圆角裁掉。截图不会被拉伸或压缩。想让重点露出来，选一张顶部信息密集的截图。</p>
+  </div>
+
+  <div class="blk">
+    <h2>标题会被裁掉吗</h2>
+    <p>最多三行，字号随画布宽度自动缩放；超长时会缩小到能放下为止。建议控制在 3 到 9 个字。</p>
+  </div>
+
+  <div class="blk">
+    <h2>数据存在哪里</h2>
+    <p>全部在本机。App 不联网、没有账号、不上传任何截图。<a href="index_privacy.html">隐私政策</a>。</p>
+  </div>
+
+  <div class="blk">
+    <h2>联系</h2>
+    <p>写信到 <a href="mailto:phinn@foxmail.com">phinn@foxmail.com</a>，附上 iOS 版本和出问题的步骤。</p>
+  </div>
+
+  <hr class="sep">
+  <h1 style="font-size:30px">Support (English)</h1>
+  <p class="intro">Turn simulator screenshots into store-ready frames. Three steps: import, tune, export.</p>
+  <div class="blk">
+    <h2>Sizes</h2>
+    <ul>
+      <li><code>6.7″</code> → 1320 × 2868, iPhone 6.7/6.9-inch (required slot)</li>
+      <li><code>Duo inner</code> → 2007 × 2853</li>
+      <li><code>Duo cover</code> → 1398 × 2034</li>
+      <li><code>iPad 13″</code> → 2064 × 2752</li>
+    </ul>
+  </div>
+  <div class="blk">
+    <h2>Data</h2>
+    <p>Everything stays on device. No network, no account, no uploads. See the <a href="index_privacy.html">privacy policy</a>.</p>
+  </div>
+  <footer>© 2026 Kinet · <a href="index_privacy.html">Privacy</a></footer>
+</div>
+</body>
+</html>
