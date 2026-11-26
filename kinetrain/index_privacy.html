@@ -2,23 +2,90 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>KinetRain Privacy</title>
-<style>body{font-family:-apple-system;max-width:640px;margin:48px auto;padding:0 20px;line-height:1.6;color:#1a1a1a}h1{font-size:28px}h2{font-size:18px;margin-top:28px}</style>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;max-width:680px;margin:48px auto;padding:0 20px;line-height:1.65;color:#1a1a1a}
+h1{font-size:28px;margin-bottom:4px}h2{font-size:18px;margin-top:30px}
+.updated{color:#666;font-size:14px}hr{margin:44px 0;border:none;border-top:1px solid #ddd}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:90%}
+</style>
 </head>
 <body>
+
 <h1>KinetRain Privacy Policy</h1>
-<p>Last updated: September 20, 2026</p>
+<p class="updated">Last updated: November 26, 2026</p>
 
 <h2>Overview</h2>
-<p>KinetRain is a menu bar application that generates rain sounds and rain animations locally on your Mac. <strong>We collect no data whatsoever.</strong></p>
+<p>KinetRain is a menu bar application that generates rain sounds and rain animations locally on your Mac. It also offers an optional sleep/focus timer. <strong>We collect no data.</strong></p>
 
 <h2>Data Collection</h2>
-<p>KinetRain does not collect, transmit, store, or share any personal information. The app makes no network requests. All audio synthesis and animations run entirely on your device.</p>
+<p>KinetRain does not collect, transmit, store, or share any personal information. The app makes no network requests. All audio synthesis, timing, and animations run entirely on your device.</p>
 
-<h2>Third-Party Services</h2>
-<p>KinetRain uses no third-party analytics, advertising, or tracking services.</p>
+<h2>Local Settings</h2>
+<p>Your preferences (volume, rain scene, mix levels, timer choice, and switch states) are saved only on your Mac using the system preferences store. They never leave your device.</p>
+
+<h2>Optional Feature: Fading Other Apps' Audio</h2>
+<p>When you start a timer and the "Fade other audio" switch is on, KinetRain uses Apple's public Core Audio Process Tap API (macOS 14.2 or later) to fade out audio played by other apps during the final minute of the timer.</p>
+<ul>
+<li>The tap is created only after you start a timer, and only for the final 60 seconds of that timer.</li>
+<li>Audio is processed in real time in memory: it is read, multiplied by a fade curve, and played back to the same output device. <strong>It is never recorded, saved, analyzed, or transmitted.</strong></li>
+<li>KinetRain's own audio is excluded from the tap. The microphone is never accessed, and the app does not use Screen Recording, Accessibility, or Automation permissions.</li>
+<li>The feature is optional and can be turned off at any time in the panel.</li>
+</ul>
+
+<h2>After the Timer Ends</h2>
+<p>To avoid waking you up, other audio stays muted after the timer finishes. It is restored immediately when you press "Restore" in the panel, start the rain again, change or clear the timer, turn the switch off, or quit the app.</p>
+
+<h2>Analytics, Advertising, and Third Parties</h2>
+<p>KinetRain contains no analytics, advertising, tracking, or third-party SDKs.</p>
+
+<h2>Children</h2>
+<p>KinetRain collects no data from anyone, including children.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the updated version will be posted on this page with a new date.</p>
 
 <h2>Contact</h2>
-<p>For questions about this policy, contact: phinn@kinet.dev</p>
+<p>For questions about this policy, contact: <a href="mailto:phinn@kinet.dev">phinn@kinet.dev</a></p>
+
+<hr>
+
+<h1>KinetRain 隐私政策</h1>
+<p class="updated">最后更新:2026 年 11 月 26 日</p>
+
+<h2>概述</h2>
+<p>KinetRain 是一款菜单栏应用,在本机生成雨声与雨窗动画,并提供可选的睡眠/专注定时。 <strong>我们不收集任何数据。</strong></p>
+
+<h2>数据收集</h2>
+<p>KinetRain 不收集、不上传、不存储、不共享任何个人信息。应用不发起网络请求。所有音频合成、计时与动画都完全在你的设备上运行。</p>
+
+<h2>本地设置</h2>
+<p>你的偏好设置(音量、雨景、混音比例、定时选择、开关状态)只通过系统偏好存储保存在你的 Mac 上,不会离开设备。</p>
+
+<h2>可选功能:淡出其他 App 的音频</h2>
+<p>当你启动定时并打开「同时淡出其他声音」开关时,KinetRain 使用 Apple 公开的 Core Audio Process Tap 接口(macOS 14.2 及以上),在定时结束前的最后一分钟淡出其他 App 播放的音频。</p>
+<ul>
+<li>只有在你启动定时后、且仅在该定时的最后 60 秒内才会创建该音频捕获。</li>
+<li>音频在内存中实时处理:读取、乘以淡出曲线后立即回放到同一输出设备。<strong>不会被录制、保存、分析或上传。</strong></li>
+<li>KinetRain 自身的音频被排除在外。应用不访问麦克风,也不使用屏幕录制、辅助功能或自动化权限。</li>
+<li>该功能是可选的,可随时在面板中关闭。</li>
+</ul>
+
+<h2>定时结束之后</h2>
+<p>为了避免吵醒你,定时结束后其他音频会保持静音。当你点击面板里的「恢复」、重新播放雨声、修改或取消定时、关闭开关或退出应用时,会立即恢复原声。</p>
+
+<h2>分析、广告与第三方</h2>
+<p>KinetRain 不包含任何分析、广告、追踪或第三方 SDK。</p>
+
+<h2>儿童</h2>
+<p>KinetRain 不收集任何人的数据,包括儿童。</p>
+
+<h2>变更</h2>
+<p>如果本政策发生变化,更新后的版本会发布在本页面并标注新日期。</p>
+
+<h2>联系方式</h2>
+<p>如对本政策有疑问,请联系:<a href="mailto:phinn@kinet.dev">phinn@kinet.dev</a></p>
+
 </body>
 </html>
